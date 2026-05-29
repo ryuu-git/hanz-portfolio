@@ -1,0 +1,252 @@
+.about {
+  min-height: 100vh;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.about-hero .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-text h2 {
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.stat {
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-lighter) 100%);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.stat:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px var(--shadow);
+  border-color: var(--primary);
+}
+
+.stat h3 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Skills Section */
+.skills {
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg) 100%);
+  padding: 3rem 1rem;
+}
+
+.skills > h2 {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.skills-columns {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skill-column {
+  background-color: var(--bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 6px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.skill-column:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px var(--shadow);
+}
+
+.skill-column h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.skill-column ul {
+  list-style: none;
+}
+
+.skill-column li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--border);
+  padding-left: 0;
+}
+
+.skill-column li:last-child {
+  border-bottom: none;
+}
+
+.skill-column li::before {
+  content: '✓ ';
+  color: var(--success);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .skill-column {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat {
+    padding: 1.5rem 1rem;
+  }
+
+  .stat h3 {
+    font-size: 2rem;
+  }
+
+  .skills {
+    padding: 2rem 1rem;
+  }
+
+  .skills-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skill-column {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(1.3rem, 6vw, 1.7rem);
+  }
+
+  .about-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat {
+    padding: 1rem;
+  }
+
+  .stat h3 {
+    font-size: 1.75rem;
+  }
+
+  .stat p {
+    font-size: 0.85rem;
+  }
+
+  .skills {
+    padding: 1.5rem 1rem;
+  }
+
+  .skill-column {
+    padding: 1rem;
+  }
+
+  .skill-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .skill-column li {
+    padding: 0.35rem 0;
+    font-size: 0.9rem;
+  }
+}

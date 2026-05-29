@@ -10,11 +10,11 @@ export default function Home() {
             Hi, I'm <span className="highlight">Hanz</span>
           </h1>
           <p className="hero-subtitle">
-            Full Stack Developer | Web Designer | Problem Solver
+            Developer & Web Designer | 3rd Year ICT Student
           </p>
           <p className="hero-description">
-            I build beautiful, responsive, and user-friendly web applications using modern technologies.
-            Let's create something amazing together!
+            I create clean, responsive websites using HTML, CSS, JavaScript, and React. 
+            Currently learning full-stack development with a focus on front-end technologies.
           </p>
           <div className="hero-buttons">
             <Link to="/experience" className="btn btn-primary btn-lg">
@@ -31,36 +31,36 @@ export default function Home() {
       </section>
 
       <section className="skills-section">
-        <h2>What I Do</h2>
+        <h2>My Skills</h2>
         <div className="skills-grid">
           <div className="skill-card">
+            <div className="skill-icon">💻</div>
+            <h3>Frontend Development</h3>
+            <p>HTML5, CSS3, JavaScript, React with responsive design</p>
+          </div>
+          <div className="skill-card">
             <div className="skill-icon">⚛️</div>
-            <h3>React Development</h3>
-            <p>Building interactive UIs with React, Hooks, and state management</p>
+            <h3>React & TypeScript</h3>
+            <p>Building interactive components with modern React patterns</p>
           </div>
           <div className="skill-card">
             <div className="skill-icon">🎨</div>
-            <h3>UI/UX Design</h3>
-            <p>Creating beautiful and responsive designs that users love</p>
-          </div>
-          <div className="skill-card">
-            <div className="skill-icon">⚙️</div>
-            <h3>Backend Development</h3>
-            <p>Developing robust APIs and server-side solutions</p>
+            <h3>UI Design</h3>
+            <p>Creating clean, user-friendly interfaces with focus on usability</p>
           </div>
           <div className="skill-card">
             <div className="skill-icon">📱</div>
-            <h3>Responsive Web</h3>
-            <p>Mobile-first approach ensuring apps work on all devices</p>
+            <h3>Responsive Design</h3>
+            <p>Mobile-first approach ensuring great experience on all devices</p>
           </div>
         </div>
       </section>
 
       <section className="cta-section">
-        <h2>Ready to start your project?</h2>
-        <p>I'm always interested in hearing about new projects and opportunities.</p>
+        <h2>Let's Connect</h2>
+        <p>I'm open to internship opportunities and collaborations. Feel free to reach out!</p>
         <Link to="/contact" className="btn btn-primary btn-lg">
-          Let's Talk
+          Contact Me
         </Link>
       </section>
     </div>

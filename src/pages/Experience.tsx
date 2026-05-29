@@ -2,47 +2,47 @@ import '../styles/Experience.css';
 
 const experiences = [
   {
-    title: 'Senior React Developer',
-    company: 'Tech Company Inc.',
-    period: '2022 - Present',
-    description: 'Led development of multiple React applications, mentored junior developers, and improved app performance by 40%.',
-    technologies: ['React', 'TypeScript', 'Redux', 'Node.js']
+    title: 'Personal Portfolio Project',
+    company: 'Self-Directed Learning',
+    period: '2026',
+    description: 'Built a responsive personal portfolio using React, TypeScript, and CSS. Implemented dark/light theme toggle with localStorage, React Router for navigation, and mobile-first responsive design.',
+    technologies: ['React', 'TypeScript', 'CSS3', 'Vite']
   },
   {
-    title: 'Full Stack Developer',
-    company: 'Digital Solutions Ltd.',
-    period: '2020 - 2022',
-    description: 'Developed full-stack web applications, managed databases, and collaborated with cross-functional teams.',
-    technologies: ['React', 'Express', 'MongoDB', 'AWS']
+    title: 'Personal Gallery Website',
+    company: 'Self-Directed Learning',
+    period: '2025 - ongoing',
+    description: 'Developed a personal gallery website for me and my girlfriend to saved our memories and save it in one place. The website features a clean, responsive design and allows us to easily upload and organize our photos.',
+    technologies: ['React', 'JavaScript', 'CSS3', 'LocalStorage']
   },
   {
-    title: 'Junior Web Developer',
-    company: 'Web Design Studio',
-    period: '2019 - 2020',
-    description: 'Built responsive websites, fixed bugs, and learned best practices in web development.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery']
+    title: 'PARTYUP - Application for travelers',
+    company: 'Self-Directed Learning',
+    period: '2026 - Ongoing',
+    description: 'Created a travel planning app that helps users find companions with similar interests and destinations.',
+    technologies: ['React', 'API', 'JavaScript', 'CSS3']
   },
   {
-    title: 'Intern',
-    company: 'Startup Hub',
-    period: '2018 - 2019',
-    description: 'Assisted in web development projects, learned version control with Git, and contributed to team projects.',
-    technologies: ['JavaScript', 'Bootstrap', 'Git']
+    title: 'Multiple Projects',
+    company: 'ICT and IT Coursework & Self-Learning',
+    period: '2021 - present',
+    description: 'Built various web applications including to-do lists, calculators, and expense trackers. Focused on learning fundamentals of HTML, CSS, JavaScript, and React.',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Java', 'C#', 'Python']
   }
 ];
 
 const education = [
   {
-    title: 'Bachelor of Science in Computer Science',
-    institution: 'University Name',
-    year: '2018',
-    details: 'Relevant coursework: Web Development, Database Management, Software Engineering'
+    title: 'Senior High School - Mobile Application and Web Development',
+    institution: 'STI College',
+    year: '2021 - 2023',
+    details: 'Specialized in MAWD (Mobile Application and Web Development) strand'
   },
   {
-    title: 'Full Stack Web Development Bootcamp',
-    institution: 'Coding Bootcamp',
-    year: '2019',
-    details: 'Intensive program covering React, Node.js, and modern web technologies'
+    title: 'Bachelor of Science in Information Technology',
+    institution: 'STI College',
+    year: '2023 - Present',
+    details: '3rd Year Student focusing on software development and web technologies'
   }
 ];
 
@@ -56,7 +56,7 @@ export default function Experience() {
 
       <section className="experience-container">
         <div className="experience-section">
-          <h2>Work Experience</h2>
+          <h2>Experience</h2>
           <div className="timeline">
             {experiences.map((exp, index) => (
               <div key={index} className="timeline-item">
@@ -93,19 +93,19 @@ export default function Experience() {
       </section>
 
       <section className="certifications">
-        <h2>Certifications</h2>
+        <h2>Continuous Learning</h2>
         <div className="cert-grid">
           <div className="cert-item">
-            <h4>React Advanced Patterns</h4>
-            <p>Coursera, 2023</p>
+            <h4>React Fundamentals</h4>
+            <p>Self-Directed Learning, 2024</p>
           </div>
           <div className="cert-item">
-            <h4>Web Development Specialist</h4>
-            <p>Google Digital Garage, 2022</p>
+            <h4>Web Development Basics</h4>
+            <p>STI College Coursework, 2024</p>
           </div>
           <div className="cert-item">
-            <h4>AWS Solutions Architect</h4>
-            <p>Amazon Web Services, 2022</p>
+            <h4>Responsive Web Design</h4>
+            <p>Ongoing Learning, 2024</p>
           </div>
         </div>
       </section>

@@ -21,12 +21,10 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to a server
     console.log('Form submitted:', formData);
     setSubmitted(true);
     setFormData({ name: '', email: '', subject: '', message: '' });
     
-    // Reset success message after 5 seconds
     setTimeout(() => setSubmitted(false), 5000);
   };
 
@@ -42,22 +40,21 @@ export default function Contact() {
           <h2>Contact Information</h2>
           <div className="info-item">
             <h3>Email</h3>
-            <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p><a href="mailto:elbonhanz@gmail.com">elbonhanz@gmail.com</a></p>
           </div>
           <div className="info-item">
             <h3>Phone</h3>
-            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p><a href="tel:+639091702252">+63 909 170 2252</a></p>
           </div>
           <div className="info-item">
             <h3>Location</h3>
-            <p>Your City, Your Country</p>
+            <p>Bulacan, Philippines</p>
           </div>
           <div className="info-item">
             <h3>Follow Me</h3>
             <div className="social-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+              <a href="https://github.com/ryuu-git" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.facebook.com/fl.hanzzz" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
           </div>
         </div>

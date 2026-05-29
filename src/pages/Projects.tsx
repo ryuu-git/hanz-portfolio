@@ -1,48 +1,47 @@
-import ProjectCard from '../components/ProjectCard';
 import '../styles/Projects.css';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-featured e-commerce platform with product management, shopping cart, and payment integration.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    link: 'https://example-ecommerce.com',
-    github: 'https://github.com/yourusername/ecommerce'
-  },
-  {
     title: 'Task Management App',
-    description: 'Collaborative task management application with real-time updates and team collaboration features.',
-    technologies: ['React', 'Firebase', 'Tailwind CSS', 'Redux'],
-    link: 'https://example-tasks.com',
-    github: 'https://github.com/yourusername/task-app'
+    description: 'A React-based task management app where users can create, edit, and track their daily tasks with an intuitive interface.',
+    technologies: ['React', 'JavaScript', 'CSS3', 'LocalStorage'],
+    link: null,
+    github: 'https://github.com/ryuu-git'
   },
   {
-    title: 'Weather Dashboard',
-    description: 'Real-time weather information dashboard with location-based forecasts and interactive maps.',
-    technologies: ['React', 'API', 'Chart.js', 'Geolocation'],
-    link: 'https://example-weather.com',
-    github: 'https://github.com/yourusername/weather-app'
+    title: 'Weather App',
+    description: 'A weather application that fetches real-time data from an API and displays current conditions and forecasts.',
+    technologies: ['React', 'API', 'JavaScript', 'CSS3'],
+    link: null,
+    github: 'https://github.com/ryuu-git'
   },
   {
-    title: 'Blog Platform',
-    description: 'Full-featured blogging platform with markdown support, comments, and social sharing.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'JWT'],
-    link: 'https://example-blog.com',
-    github: 'https://github.com/yourusername/blog-app'
+    title: 'Personal Portfolio',
+    description: 'A fully responsive portfolio website built with React and TypeScript, featuring dark/light theme support.',
+    technologies: ['React', 'TypeScript', 'CSS3', 'Vite'],
+    link: null,
+    github: 'https://github.com/ryuu-git/hanz-portfolio'
   },
   {
-    title: 'Portfolio Website',
-    description: 'Responsive personal portfolio website showcasing projects and skills.',
-    technologies: ['React', 'Vite', 'CSS3', 'TypeScript'],
-    link: 'https://example-portfolio.com',
-    github: 'https://github.com/yourusername/portfolio'
+    title: 'To-Do List Application',
+    description: 'A simple but effective to-do list with add, delete, and mark-complete functionality with local storage.',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
+    link: null,
+    github: 'https://github.com/ryuu-git'
   },
   {
-    title: 'Chat Application',
-    description: 'Real-time chat application with user authentication and message history.',
-    technologies: ['React', 'Socket.io', 'Express', 'MongoDB'],
-    link: 'https://example-chat.com',
-    github: 'https://github.com/yourusername/chat-app'
+    title: 'Calculator App',
+    description: 'A functional calculator application built with React supporting basic arithmetic operations.',
+    technologies: ['React', 'JavaScript', 'CSS3'],
+    link: null,
+    github: 'https://github.com/ryuu-git'
+  },
+  {
+    title: 'Expense Tracker',
+    description: 'An expense tracking application to help manage and visualize personal spending with category organization.',
+    technologies: ['React', 'JavaScript', 'CSS3', 'LocalStorage'],
+    link: null,
+    github: 'https://github.com/ryuu-git'
   }
 ];
 
@@ -50,22 +49,36 @@ export default function Projects() {
   return (
     <div className="projects">
       <section className="projects-hero">
-        <h1>My Projects</h1>
-        <p className="subtitle">Showcase of my recent work</p>
+        <h1>Hanz Portfolio</h1>
+        <p className="subtitle">My Recent Projects & Learning</p>
       </section>
 
       <section className="projects-container">
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+            <div key={index} className="project-card">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="tech-tags">
+                {project.technologies.map((tech, i) => (
+                  <span key={i} className="tech-tag">{tech}</span>
+                ))}
+              </div>
+              <div className="project-links">
+                {project.link && (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">View Live</a>
+                )}
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary">View Code</a>
+              </div>
+            </div>
           ))}
         </div>
       </section>
 
       <section className="more-projects">
-        <h2>Want to see more?</h2>
+        <h2>Explore More on GitHub</h2>
         <p>Check out my GitHub profile for more projects and contributions.</p>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+        <a href="https://github.com/ryuu-git" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
           Visit My GitHub
         </a>
       </section>

@@ -32,7 +32,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/hanz-portfolio/">
       <Header theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Routes>

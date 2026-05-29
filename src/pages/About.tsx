@@ -12,67 +12,61 @@ export default function About() {
         <div className="about-text">
           <h2>Who Am I?</h2>
           <p>
-            I'm a passionate Full Stack Developer with a love for creating beautiful and functional web applications.
-            With expertise in React, JavaScript, TypeScript, and modern web technologies, I help businesses
-            and entrepreneurs bring their ideas to life.
+            I'm Hanz, a 3rd year ICT student at STI College (MAWD strand). I'm passionate about web development 
+            and creating clean, user-friendly interfaces. I enjoy solving problems through code and learning new 
+            technologies.
           </p>
           <p>
-            My journey in web development started with curiosity and has evolved into a career dedicated to
-            solving complex problems and creating user-centric solutions. I believe in writing clean, maintainable
-            code and staying updated with the latest industry trends.
+            My focus is on front-end development with React and JavaScript, while continuously expanding my knowledge 
+            in full-stack development. I'm eager to apply what I've learned in real-world projects and grow as a developer 
+            through internship and professional experience.
           </p>
         </div>
 
         <div className="about-stats">
           <div className="stat">
-            <h3>5+</h3>
-            <p>Years of Experience</p>
+            <h3>3</h3>
+            <p>Years in ICT</p>
           </div>
           <div className="stat">
-            <h3>50+</h3>
-            <p>Projects Completed</p>
+            <h3>10+</h3>
+            <p>Projects Built</p>
           </div>
           <div className="stat">
-            <h3>30+</h3>
-            <p>Happy Clients</p>
+            <h3>100%</h3>
+            <p>Committed</p>
           </div>
         </div>
       </section>
 
       <section className="skills">
-        <h2>My Skills</h2>
+        <h2>Technical Skills</h2>
         <div className="skills-columns">
           <div className="skill-column">
-            <h3>Frontend</h3>
+            <h3>Strong</h3>
             <ul>
-              <li>React & React Router</li>
-              <li>TypeScript</li>
-              <li>HTML5 & CSS3</li>
-              <li>JavaScript ES6+</li>
-              <li>Tailwind CSS</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript (Intermediate)</li>
               <li>Responsive Design</li>
             </ul>
           </div>
           <div className="skill-column">
-            <h3>Backend</h3>
+            <h3>Learning</h3>
             <ul>
-              <li>Node.js & Express</li>
-              <li>MongoDB & Firebase</li>
-              <li>RESTful APIs</li>
-              <li>Authentication</li>
-              <li>PostgreSQL</li>
-              <li>Serverless Functions</li>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>React Router</li>
+              <li>API Integration</li>
             </ul>
           </div>
           <div className="skill-column">
-            <h3>Tools & Others</h3>
+            <h3>Familiar</h3>
             <ul>
+              <li>Java</li>
+              <li>C#</li>
+              <li>C++</li>
               <li>Git & GitHub</li>
-              <li>VS Code</li>
-              <li>Vite & Webpack</li>
-              <li>Testing (Jest)</li>
-              <li>Figma</li>
-              <li>Docker</li>
             </ul>
           </div>
         </div>

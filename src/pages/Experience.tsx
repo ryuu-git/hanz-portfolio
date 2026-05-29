@@ -97,15 +97,15 @@ export default function Experience() {
         <div className="cert-grid">
           <div className="cert-item">
             <h4>React Fundamentals</h4>
-            <p>Self-Directed Learning, 2024</p>
+            <p>Self-Directed Learning, 2026</p>
           </div>
           <div className="cert-item">
             <h4>Web Development Basics</h4>
-            <p>STI College Coursework, 2024</p>
+            <p>STI College Coursework, 2021</p>
           </div>
           <div className="cert-item">
             <h4>Responsive Web Design</h4>
-            <p>Ongoing Learning, 2024</p>
+            <p>Ongoing Learning, 2021</p>
           </div>
         </div>
       </section>

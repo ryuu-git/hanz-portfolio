@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Hanz Portfolio</h3>
-            <p>Developer & Web Designer | 3rd Year ICT Student</p>
+            <p>Developer & Web Designer | 3rd Year Information Technology Student</p>
           </div>
 
           <div className="footer-section">
@@ -28,7 +28,7 @@ export default function Footer() {
             <ul>
               <li><a href="https://github.com/ryuu-git" target="_blank" rel="noopener noreferrer">GitHub</a></li>
               <li><a href="https://www.facebook.com/fl.hanzzz" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-              <li><a href="mailto:elbonhanz@gmail.com">Email</a></li>
+              <li><a href="mailto:elbonhanz@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
             </ul>
           </div>
         </div>

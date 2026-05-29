@@ -12,7 +12,7 @@ export default function About() {
         <div className="about-text">
           <h2>Who Am I?</h2>
           <p>
-            I'm Hanz, a 3rd year ICT student at STI College (MAWD strand). I'm passionate about web development 
+            I'm Hanz, a 3rd year IT student at STI College. I'm passionate about web development 
             and creating clean, user-friendly interfaces. I enjoy solving problems through code and learning new 
             technologies.
           </p>
@@ -25,8 +25,8 @@ export default function About() {
 
         <div className="about-stats">
           <div className="stat">
-            <h3>3</h3>
-            <p>Years in ICT</p>
+            <h3>2</h3>
+            <p>Years in MAWD</p>
           </div>
           <div className="stat">
             <h3>10+</h3>
@@ -65,6 +65,7 @@ export default function About() {
             <ul>
               <li>Java</li>
               <li>C#</li>
+              <li>Python</li>
               <li>C++</li>
               <li>Git & GitHub</li>
             </ul>
